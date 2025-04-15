@@ -1,0 +1,252 @@
+body {
+    font-family: Montserrat;
+    color: #002349;
+}
+
+.wrapper {
+    padding: 0 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.featured-section::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 0;
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 570px;
+    border-top: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    border-left: none;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(255.04deg, #3774B3 0%, #002349 116.02%);
+    z-index: 1;
+    pointer-events: none;
+}
+@media (max-width: 1920px) {
+    .featured-section::before {
+        max-width: 1033px;
+        max-height: 570px;
+        top: 10px;
+    }
+}
+@media (max-width: 1440px) {
+    .featured-section::before {
+        max-width: 800px;
+        max-height: 420px;
+        top: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .featured-section::before {
+        max-width: 600px;
+        max-height: 320px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-section::before {
+        display: none;
+    }
+}
+
+.featured-section::after {
+    content: '';
+    position: absolute;
+    background-image: url("images/bg.png");
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+header {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.top {
+    color: #3774B3;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: 1.93px;
+    text-transform: uppercase;
+}
+
+h2 .left_word {
+    font-weight: 500;
+}
+
+h2 .right_word {
+    font-weight: 300;
+}
+
+.property-card {
+    position: relative;
+    border-radius: 8px;
+    background: white;
+    padding-bottom: 50px;
+}
+
+.property-image {
+    width: 100%;
+    display: block;
+}
+
+.property-details {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 95%;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 55px 24px -32.4px rgba(157, 173, 200, 0.44);
+    z-index: 2;
+    border-bottom: 3px solid #4A89C9;
+}
+
+.property-price {
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 100%;
+    letter-spacing: -1.32px;
+
+}
+
+.property-address {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.property-address-second {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+
+}
+
+.left-block {
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 28px 0 28px 28px;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 24px;
+    padding-right: 48px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail {
+    text-align: center;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: -2px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1.32px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.divider {
+    width: 1px;
+    height: 50px;
+    background: #D1D3E0;
+}
+
+.right {
+    flex-shrink: 0;
+}
+
+.view-details-btn {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 2.6px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #002349;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.swiper-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+    cursor: pointer;
+}
+
+.view-all {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.link {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #1D558F;
+    padding: 40px 20px 4px;
+    cursor: pointer;
+}
