@@ -90,6 +90,24 @@ h2 {
 
 h2 .left_word {
     font-weight: 500;
+    position: relative;
+}
+.left_word:before{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    bottom: -10px;
+    background: #1D558F;
+}
+.left_word:after{
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 3px;
+    bottom: -10px;
+    left: 80px;
+    background: #4A89C9;
 }
 
 h2 .right_word {
