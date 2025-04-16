@@ -250,3 +250,10 @@ h2 .right_word {
     padding: 40px 20px 4px;
     cursor: pointer;
 }
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* рівно 2 колонки */
+    gap: 30px;
+    margin-top: 40px;
+}
